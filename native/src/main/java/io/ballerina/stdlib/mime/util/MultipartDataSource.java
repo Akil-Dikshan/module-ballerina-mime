@@ -114,6 +114,12 @@ public class MultipartDataSource implements BRefValue {
             writeFinalBoundaryString(writer, parentBoundaryString);
         } catch (IOException e) {
             log.error("Error occurred while writing body parts to outputstream", e.getMessage());
+        } finally {
+            try {
+                writer.flush();
+            } catch (IOException e) {
+                log.error("Error occurred while flushing multipart writer", e.getMessage());
+            }
         }
     }
 
