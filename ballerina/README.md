@@ -2,7 +2,7 @@
 
 This module provides a set of APIs to work with messages, which follow the Multipurpose Internet Mail Extensions (MIME) specification as specified in the [RFC 2045 standard](https://www.ietf.org/rfc/rfc2045.txt).
 
-## Key Features
+### Key Features
 
 - Multipart message handling for `form-data`, `mixed`, `alternative`, `related`, and `parallel` types
 - Set and retrieve entity body content for XML, text, JSON, `byte[]`, and body parts
